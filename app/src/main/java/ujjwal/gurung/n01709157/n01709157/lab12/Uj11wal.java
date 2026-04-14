@@ -1,6 +1,5 @@
+//Ujjwal Gurung n01709157 CENG 258-0CC
 package ujjwal.gurung.n01709157.n01709157.lab12;
-// Ujjwal Gurung - [Your Student ID]
-package ujjwal.gurung.n11111.lab12;
 
 import android.os.Bundle;
 import android.text.InputFilter;
