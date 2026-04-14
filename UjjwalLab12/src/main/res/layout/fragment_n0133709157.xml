@@ -4,25 +4,25 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#E8F5E9"
-    android:padding="16dp">
+    android:background="@color/bg_tab3"
+    android:padding="@dimen/ujj_space_large">
 
     <TextView
         android:id="@+id/ujjWebTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Embed web sites"
+        android:text="@string/ujj_embed_web"
         android:textColor="@color/red"
         android:textStyle="bold|italic"
         android:gravity="center"
-        android:textSize="20sp"
-        android:layout_marginBottom="16dp"/>
+        android:textSize="@dimen/ujj_text_large"
+        android:layout_marginBottom="@dimen/ujj_space_large"/>
 
     <Spinner
         android:id="@+id/ujjSpinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="@dimen/ujj_space_large"/>
 
     <WebView
         android:id="@+id/ujjWebView"
@@ -35,7 +35,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="@dimen/ujj_space_medium"
         app:adSize="BANNER"
         app:adUnitId="ca-app-pub-3940256099942544/6300978111" />
 

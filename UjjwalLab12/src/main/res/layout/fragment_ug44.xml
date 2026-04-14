@@ -3,45 +3,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFF9C4"
-    android:padding="16dp">
+    android:background="@color/bg_tab4"
+    android:padding="@dimen/ujj_space_large">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginBottom="32dp"
-        android:layout_marginTop="32dp">
+        android:layout_marginBottom="@dimen/ujj_space_xlarge"
+        android:layout_marginTop="@dimen/ujj_space_xlarge">
 
         <TextView
             android:id="@+id/ujjFirstName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Ujjwal"
+            android:text="@string/ujj_first_name"
             android:textColor="@color/red"
             android:textStyle="bold|italic"
-            android:textSize="24sp"
+            android:textSize="@dimen/ujj_text_xlarge"
             android:rotation="45"
             android:layout_alignParentStart="true"
-            android:layout_marginStart="40dp"/>
+            android:layout_marginStart="@dimen/ujj_space_xxlarge"/>
 
         <TextView
             android:id="@+id/ujjLastName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Gurung"
+            android:text="@string/ujj_last_name"
             android:textColor="@color/blue"
             android:textStyle="bold|italic"
-            android:textSize="24sp"
+            android:textSize="@dimen/ujj_text_xlarge"
             android:rotation="-45"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="40dp"/>
+            android:layout_marginEnd="@dimen/ujj_space_xxlarge"/>
     </RelativeLayout>
 
     <EditText
         android:id="@+id/ujjPhoneInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter phone number"
+        android:hint="@string/ujj_phone_hint"
         android:inputType="phone"
         android:maxLength="11" />
 
@@ -49,7 +49,7 @@
         android:id="@+id/ujjMessageInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter message"
+        android:hint="@string/ujj_message_hint"
         android:inputType="textMultiLine"
         android:minLines="2" />
 
@@ -58,9 +58,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="16dp"
-        android:backgroundTint="#00008B"
+        android:layout_marginTop="@dimen/ujj_space_large"
+        android:backgroundTint="@color/dark_blue"
         android:textColor="@color/white"
         android:textStyle="bold"
-        android:text="Send SMS" />
+        android:text="@string/ujj_send_sms" />
 </LinearLayout>

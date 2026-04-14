@@ -8,12 +8,12 @@
         android:id="@+id/ujjMapTitleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ujjwal Gurung - [Your Student ID]"
+        android:text="@string/ujj_full_name_id"
         android:gravity="center"
         android:textColor="@color/blue"
         android:textStyle="bold|italic"
-        android:textSize="20sp"
-        android:padding="16dp" />
+        android:textSize="@dimen/ujj_text_large"
+        android:padding="@dimen/ujj_space_large" />
 
     <com.google.android.gms.maps.MapView
         android:id="@+id/ujjMapView"

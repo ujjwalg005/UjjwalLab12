@@ -3,21 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:orientation="vertical"
-    android:padding="12dp"
-    android:layout_marginBottom="8dp"
-    android:background="#F3E5F5">
+    android:padding="@dimen/ujj_space_standard"
+    android:layout_marginBottom="@dimen/ujj_space_medium"
+    android:background="@color/bg_course_row">
 
     <TextView
         android:id="@+id/ujjRowCourseName"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:textSize="18sp" />
+        android:textSize="@dimen/ujj_text_medium" />
 
     <TextView
         android:id="@+id/ujjRowCourseDesc"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:layout_marginTop="4dp"/>
+        android:layout_marginTop="@dimen/ujj_space_small"/>
 </LinearLayout>

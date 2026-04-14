@@ -3,30 +3,30 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="16dp">
+    android:padding="@dimen/ujj_space_large">
 
     <TextView
         android:id="@+id/ujjTitleText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Ujjwal Gurung - 01709157"
+        android:text="@string/ujj_full_name_id"
         android:gravity="center"
         android:textColor="@color/red"
         android:textStyle="bold|italic"
-        android:textSize="20sp" />
+        android:textSize="@dimen/ujj_text_large" />
 
     <EditText
         android:id="@+id/ujjCourseNameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter course name"
+        android:hint="@string/ujj_course_name_hint"
         android:inputType="textCapCharacters" />
 
     <EditText
         android:id="@+id/ujjCourseDescInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Enter course description"
+        android:hint="@string/ujj_course_desc_hint"
         android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -," />
 
     <LinearLayout
@@ -34,25 +34,25 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="16dp">
+        android:layout_marginTop="@dimen/ujj_space_large">
 
         <Button
             android:id="@+id/ujjAddBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Add"
-            android:layout_marginEnd="16dp"/>
+            android:text="@string/ujj_add_btn"
+            android:layout_marginEnd="@dimen/ujj_space_large"/>
 
         <Button
             android:id="@+id/ujjDeleteBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Delete"/>
+            android:text="@string/ujj_delete_btn"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ujjRecyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="16dp"/>
+        android:layout_marginTop="@dimen/ujj_space_large"/>
 </LinearLayout>

@@ -2,4 +2,10 @@
 <resources>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="red">#FF0000</color>
+    <color name="blue">#0000FF</color>
+    <color name="dark_blue">#00008B</color>
+    <color name="bg_course_row">#F3E5F5</color>
+    <color name="bg_tab3">#E8F5E9</color>
+    <color name="bg_tab4">#FFF9C4</color>
 </resources>
