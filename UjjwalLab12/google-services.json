@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "986379630001",
+    "project_id": "ujjwallab12",
+    "storage_bucket": "ujjwallab12.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986379630001:android:62bc5265ac5ac69e12f990",
+        "android_client_info": {
+          "package_name": "ujjwal.gurung.n01709157.lab12"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdxKb2QGraDWF0K965hfF_f1WiP7KjnRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:986379630001:android:45d0f0b17e1ffd7912f990",
+        "android_client_info": {
+          "package_name": "ujjwal.gurung.n01709157.n01709157.lab12"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdxKb2QGraDWF0K965hfF_f1WiP7KjnRc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,5 @@
 //Ujjwal Gurung n01709157 CENG 258-0CC
-package ujjwal.gurung.n01709157.lab12; // Fixed package name
+package ujjwal.gurung.n01709157.n01709157.lab12; // Fixed package name
 
 import android.os.Bundle;
 import androidx.annotation.NonNull;
@@ -10,10 +10,7 @@ import androidx.viewpager2.widget.ViewPager2;
 import com.google.android.material.tabs.TabLayout;
 import com.google.android.material.tabs.TabLayoutMediator;
 
-import ujjwal.gurung.n01709157.n01709157.lab12.Gu22rung;
-import ujjwal.gurung.n01709157.n01709157.lab12.UG44;
-import ujjwal.gurung.n01709157.n01709157.lab12.Uj11wal;
-import ujjwal.gurung.n01709157.n01709157.lab12.n0133709157;
+
 
 public class GurungActivity12 extends AppCompatActivity {
 
@@ -59,7 +56,7 @@ public class GurungActivity12 extends AppCompatActivity {
     // 1. This inflates the menu onto the ActionBar (Now safely INSIDE the class!)
     @Override
     public boolean onCreateOptionsMenu(android.view.Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.main_menu, menu);
         return true;
     }
 

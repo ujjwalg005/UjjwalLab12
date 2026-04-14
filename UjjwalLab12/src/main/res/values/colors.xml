@@ -8,4 +8,5 @@
     <color name="bg_course_row">#F3E5F5</color>
     <color name="bg_tab3">#E8F5E9</color>
     <color name="bg_tab4">#FFF9C4</color>
+    <color name="alert_green">#00FF00</color>
 </resources>
