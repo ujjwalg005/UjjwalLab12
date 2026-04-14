@@ -1,24 +1,78 @@
+//Ujjwal Gurung n01709157 CENG 258-0CC
 package ujjwal.gurung.n01709157.n01709157.lab12;
 
-import android.os.Bundle;
 
-import androidx.activity.EdgeToEdge;
+import android.os.Bundle;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
+import androidx.fragment.app.Fragment;
+import androidx.viewpager2.adapter.FragmentStateAdapter;
+import androidx.viewpager2.widget.ViewPager2;
+import com.google.android.material.tabs.TabLayout;
+import com.google.android.material.tabs.TabLayoutMediator;
 
 public class GurungActivity12 extends AppCompatActivity {
+
+    private TabLayout ujjTabLayout;
+    private ViewPager2 ujjViewPager;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        EdgeToEdge.enable(this);
         setContentView(R.layout.activity_gurung);
-        ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
-            Insets systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars());
-            v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
-            return insets;
-        });
+
+        ujjTabLayout = findViewById(R.id.ujjTabLayout);
+        ujjViewPager = findViewById(R.id.ujjViewPager);
+
+        // Setup the ViewPager Adapter
+        ViewPagerAdapter adapter = new ViewPagerAdapter(this);
+        ujjViewPager.setAdapter(adapter);
+
+        // Link TabLayout and ViewPager2
+        new TabLayoutMediator(ujjTabLayout, ujjViewPager,
+                (tab, position) -> {
+                    switch (position) {
+                        case 0:
+                            tab.setText(getString(R.string.ujj_tab1_name)); // "Ujjwal"
+                            tab.setIcon(R.drawable.ic_home); // Add proper icons to res/drawable
+                            break;
+                        case 1:
+                            tab.setText(getString(R.string.ujj_tab2_name)); // "Gurung"
+                            tab.setIcon(R.drawable.ic_cart);
+                            break;
+                        case 2:
+                            tab.setText(getString(R.string.ujj_tab3_name)); // "N11111"
+                            tab.setIcon(R.drawable.ic_truck);
+                            break;
+                        case 3:
+                            tab.setText(getString(R.string.ujj_tab4_name)); // "UG"
+                            tab.setIcon(R.drawable.ic_chat);
+                            break;
+                    }
+                }).attach();
+    }
+
+    // Adapter class to manage fragments
+    private static class ViewPagerAdapter extends FragmentStateAdapter {
+        public ViewPagerAdapter(@NonNull AppCompatActivity activity) {
+            super(activity);
+        }
+
+        @NonNull
+        @Override
+        public Fragment createFragment(int position) {
+            switch (position) {
+                case 0: return new Uj11wal();
+                case 1: return new Gu22rung();
+                case 2: return new n0133709157(); // Update class name with your ID
+                case 3: return new UG44();
+                default: return new Uj11wal();
+            }
+        }
+
+        @Override
+        public int getItemCount() {
+            return 4; // 4 tabs [cite: 63]
+        }
     }
 }
