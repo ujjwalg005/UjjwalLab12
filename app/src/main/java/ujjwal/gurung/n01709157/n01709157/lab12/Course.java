@@ -1,5 +1,5 @@
 // Ujjwal Gurung - [Your Student ID]
-package ujjwal.gurung.n01709157.lab12;
+package ujjwal.gurung.n01709157.n01709157.lab12;
 
 public class Course {
     private String id;
