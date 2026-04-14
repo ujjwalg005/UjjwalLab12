@@ -64,7 +64,7 @@ public class GurungActivity12 extends AppCompatActivity {
             switch (position) {
                 case 0: return new Uj11wal();
                 case 1: return new Gu22rung();
-                case 2: return new n0133709157(); // Update class name with your ID
+                case 2: return new n0133709157();
                 case 3: return new UG44();
                 default: return new Uj11wal();
             }

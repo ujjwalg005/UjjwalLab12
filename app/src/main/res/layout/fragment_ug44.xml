@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#FFF9C4"
+    android:padding="16dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:layout_marginTop="32dp">
+
+        <TextView
+            android:id="@+id/ujjFirstName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Ujjwal"
+            android:textColor="@color/red"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:rotation="45"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="40dp"/>
+
+        <TextView
+            android:id="@+id/ujjLastName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Gurung"
+            android:textColor="@color/blue"
+            android:textStyle="bold|italic"
+            android:textSize="24sp"
+            android:rotation="-45"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="40dp"/>
+    </RelativeLayout>
+
+    <EditText
+        android:id="@+id/ujjPhoneInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter phone number"
+        android:inputType="phone"
+        android:maxLength="11" />
+
+    <EditText
+        android:id="@+id/ujjMessageInput"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter message"
+        android:inputType="textMultiLine"
+        android:minLines="2" />
+
+    <Button
+        android:id="@+id/ujjSendSmsBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="16dp"
+        android:backgroundTint="#00008B"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:text="Send SMS" />
+</LinearLayout>
