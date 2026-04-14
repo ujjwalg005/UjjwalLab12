@@ -23,4 +23,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "UjjwalLab12"
-include ':app'
+include ':UjjwalLab12'
