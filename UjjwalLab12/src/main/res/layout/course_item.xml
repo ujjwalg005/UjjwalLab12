@@ -1,23 +1,36 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:orientation="vertical"
-    android:padding="@dimen/ujj_space_standard"
-    android:layout_marginBottom="@dimen/ujj_space_medium"
-    android:background="@color/bg_course_row">
+    android:layout_marginVertical="@dimen/ujj_space_medium"
+    android:layout_marginHorizontal="@dimen/ujj_space_small"
+    app:cardCornerRadius="@dimen/ujj_space_medium"
+    app:cardElevation="@dimen/ujj_space_small"
+    app:cardBackgroundColor="@color/white">
 
-    <TextView
-        android:id="@+id/ujjRowCourseName"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:textSize="@dimen/ujj_text_medium" />
+        android:orientation="vertical"
+        android:padding="@dimen/ujj_space_large">
 
-    <TextView
-        android:id="@+id/ujjRowCourseDesc"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:textColor="@color/black"
-        android:layout_marginTop="@dimen/ujj_space_small"/>
-</LinearLayout>
+        <TextView
+            android:id="@+id/ujjRowCourseName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="@dimen/ujj_text_medium"
+            android:textStyle="normal"
+            android:layout_marginBottom="@dimen/ujj_space_standard"/>
+
+        <TextView
+            android:id="@+id/ujjRowCourseDesc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:textSize="15sp"/>
+
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

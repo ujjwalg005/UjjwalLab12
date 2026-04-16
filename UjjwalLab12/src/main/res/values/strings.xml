@@ -1,12 +1,12 @@
 <resources>
-    <string name="app_name">UjjwalLab122</string>
+    <string name="app_name">UjjwalLab12</string>
     <string name="ujj_tab1_name">Ujjwal</string>
     <string name="ujj_tab2_name">Gurung</string>
     <string name="ujj_tab3_name">N01709157</string>
 
     <string name="ujj_tab4_name">UG</string>
 
-    <string name="ujj_full_name_id">Ujjwal Gurung - 01709157</string>
+    <string name="ujj_full_name_id">Ujjwal Gurung - n01709157</string>
     <string name="ujj_err_empty">can not be empty</string>
 
     <string name="ujj_course_name_hint">Enter course name</string>

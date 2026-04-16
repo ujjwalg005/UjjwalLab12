@@ -9,4 +9,7 @@
     <color name="bg_tab3">#E8F5E9</color>
     <color name="bg_tab4">#FFF9C4</color>
     <color name="alert_green">#00FF00</color>
+    <color name="ujj_bg_pink">#FCF5FF</color>
+    <color name="ujj_title_red">#D82343</color>
+    <color name="ujj_btn_purple">#674BA4</color>
 </resources>

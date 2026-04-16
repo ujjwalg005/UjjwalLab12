@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UjjwalLab122</string>
+    <string name="ujj_tab1_name">Ujjwal</string>
+    <string name="ujj_tab2_name">Gurung</string>
+    <string name="ujj_tab3_name">N01709157</string>
+    <string name="ujj_tab4_name">UG</string>
+    <string name="ujj_full_name_id">Ujjwal Gurung - n01709157</string>
+    <string name="ujj_first_name">Ujjwal</string>
+    <string name="ujj_last_name">Gurung</string>
+
+    <string name="ujj_course_name_hint">Entrez le nom du cours</string>
+    <string name="ujj_course_desc_hint">Entrez la description du cours</string>
+    <string name="ujj_add_btn">Ajouter</string>
+    <string name="ujj_delete_btn">Supprimer</string>
+    <string name="ujj_embed_web">Intégrer des sites web</string>
+    <string name="ujj_phone_hint">Entrez le numéro de téléphone</string>
+    <string name="ujj_message_hint">Entrez le message</string>
+    <string name="ujj_send_sms">Envoyer SMS</string>
+
+    <string name="ujj_marker_humber">Collège Humber</string>
+    <string name="ujj_marker_brampton">Brampton + Ujjwal</string>
+    <string name="ujj_marker_selected">Emplacement sélectionné</string>
+    <string name="ujj_notif_title">Changement d\'adresse</string> <string name="ujj_menu_contact">Contact</string>
+    <string name="ujj_dialog_title">1er Contact</string>
+    <string name="ujj_dialog_ok">OK</string>
+
+    <string name="ujj_err_empty">can not be empty</string>
+    <string name="ujj_err_invalid_course">Invalid course name. Format: CENG-258</string>
+    <string name="ujj_toast_no_data">No data to delete.</string>
+    <string name="ujj_toast_db_error">Database Error</string>
+    <string name="ujj_toast_perm_denied">Notification permission denied</string>
+    <string name="ujj_snackbar_dismiss">Dismiss</string>
+    <string name="ujj_unknown_location">Unknown Location at: </string>
+    <string name="ujj_toast_ad_click">Ujjwal + </string>
+    <string name="ujj_err_invalid_phone">must be valid phone number</string>
+    <string name="ujj_toast_sms_denied">SMS Permission Denied</string>
+    <string name="ujj_toast_sms_sent">SMS sent</string>
+    <string name="ujj_toast_sms_failed">SMS failed to send</string>
+    <string name="ujj_toast_sms_delivered">SMS delivered</string>
+</resources>

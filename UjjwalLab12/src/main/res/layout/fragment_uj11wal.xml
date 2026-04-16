@@ -1,58 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:padding="@dimen/ujj_space_large">
+    android:padding="@dimen/ujj_space_large"
+    android:background="@color/ujj_bg_pink">
 
     <TextView
-        android:id="@+id/ujjTitleText"
+        android:id="@+id/ujjFullNameId"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/ujj_full_name_id"
-        android:gravity="center"
-        android:textColor="@color/red"
+        android:textColor="@color/ujj_title_red"
+        android:textSize="@dimen/ujj_text_large"
         android:textStyle="bold|italic"
-        android:textSize="@dimen/ujj_text_large" />
+        android:gravity="center"
+        android:layout_marginBottom="@dimen/ujj_space_large"/>
 
     <EditText
         android:id="@+id/ujjCourseNameInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/ujj_course_name_hint"
-        android:inputType="textCapCharacters" />
+        android:inputType="textCapCharacters"
+        android:layout_marginBottom="@dimen/ujj_space_large"/>
 
     <EditText
         android:id="@+id/ujjCourseDescInput"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="@string/ujj_course_desc_hint"
-        android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ -," />
+        android:layout_marginBottom="@dimen/ujj_space_xlarge"/>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:gravity="center"
-        android:layout_marginTop="@dimen/ujj_space_large">
+        android:layout_marginBottom="@dimen/ujj_space_xlarge">
 
         <Button
             android:id="@+id/ujjAddBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/ujj_add_btn"
-            android:layout_marginEnd="@dimen/ujj_space_large"/>
+            android:textColor="@color/white"
+            android:backgroundTint="@color/ujj_btn_purple"
+            android:paddingHorizontal="@dimen/ujj_space_xlarge"
+            app:cornerRadius="@dimen/ujj_space_xlarge"
+            android:layout_marginEnd="@dimen/ujj_space_xlarge"/>
 
         <Button
             android:id="@+id/ujjDeleteBtn"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="@string/ujj_delete_btn"/>
+            android:text="@string/ujj_delete_btn"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/ujj_btn_purple"
+            android:paddingHorizontal="@dimen/ujj_space_xlarge"
+            app:cornerRadius="@dimen/ujj_space_xlarge"/>
     </LinearLayout>
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/ujjRecyclerView"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="@dimen/ujj_space_large"/>
+        android:layout_height="match_parent"/>
+
 </LinearLayout>
